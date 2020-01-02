@@ -5,14 +5,13 @@ const router = new Router();
 
 
 /**
- * @api {get} /user/:id Request User information
- * @apiName GetUser
- * @apiGroup User
+ * @api {get} /create Create A Fruit
+ * @apiName Create
+ * @apiGroup Fruit
  *
- * @apiParam {Number} id Users unique ID.
+ * @apiParam {String} name Name of Fruit.
  *
- * @apiSuccess {String} firstname Firstname of the User.
- * @apiSuccess {String} lastname  Lastname of the User.
+ * @apiSuccess {String} name Name of Fruit.
  */
 router.get('/create', async (ctx) => {
     const client = new Fruit({
@@ -20,7 +19,9 @@ router.get('/create', async (ctx) => {
     });
     await client.save();
     json(ctx, {
-        name: ctx.query.name
+        data: {
+            name: ctx.query.name
+        }
     });
 });
 

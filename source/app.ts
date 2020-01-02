@@ -1,4 +1,3 @@
-import './schemas/index';
 import config from './config';
 import { connect as MongoConnect } from 'mongoose';
 import errorHandler from './utils/errorHandler'
