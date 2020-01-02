@@ -1,0 +1,33 @@
+{
+  "name": "koa2-typescript-demo",
+  "version": "0.1.0",
+  "description": "This is a demo project with Koa2 + Typescript + Mongoose  ",
+  "main": "build/app.js",
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint ./source/ --ext .ts",
+    "start": "node ./build/app.js",
+    "doc": "apidoc -i ./source/controllers -o ./document",
+    "watch": "tsc --watch"
+  },
+  "author": "Lengyue <lengyue@lengyue.me> (https://lengyue.me)",
+  "license": "MIT",
+  "repository": "github:leng-yue/koa2-typescript-demo",
+  "dependencies": {
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2": "^2.0.0-alpha.7",
+    "koa2-cors": "^2.0.6",
+    "mongoose": "^5.7.10"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.5.30",
+    "@types/node": "^12.12.22",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "apidoc": "^0.17.7",
+    "eslint": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "typescript": "^3.7.2"
+  }
+}

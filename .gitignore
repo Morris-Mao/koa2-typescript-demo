@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+# Webstorm
+.idea
+# Ignore Ts Compiled Files
+build
+# Ignore Document
+document
