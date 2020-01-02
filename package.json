@@ -7,7 +7,8 @@
     "eslint": "./node_modules/.bin/eslint ./source/ --ext .ts",
     "start": "node ./build/app.js",
     "doc": "apidoc -i ./source/controllers -o ./document",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "build": "tsc --build"
   },
   "author": "Lengyue <lengyue@lengyue.me> (https://lengyue.me)",
   "license": "MIT",

@@ -3,6 +3,8 @@ This is a demo project with Koa2 + Typescript + Mongoose
 Just Start With 
 ```shell
 npm i --save
+npm run build
+# npm run watch // If you want to rebuild when files change
 npm start
 ```
 
