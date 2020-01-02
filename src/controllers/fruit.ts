@@ -1,4 +1,4 @@
-import {Fruit} from '../schemas/index';
+import Fruit from '../schemas/fruit';
 import json from '../utils/json';
 import Koa from 'koa';
 import Router from 'koa-router';

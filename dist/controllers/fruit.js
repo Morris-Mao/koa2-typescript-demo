@@ -39,7 +39,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var index_1 = require("../schemas/index");
+var fruit_1 = __importDefault(require("../schemas/fruit"));
 var json_1 = __importDefault(require("../utils/json"));
 var koa_router_1 = __importDefault(require("koa-router"));
 var router = new koa_router_1.default();
@@ -57,7 +57,7 @@ router.get('/create', function (ctx) { return __awaiter(void 0, void 0, void 0, 
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
-                client = new index_1.Fruit({
+                client = new fruit_1.default({
                     name: ctx.query.name
                 });
                 return [4 /*yield*/, client.save()];
@@ -76,7 +76,7 @@ router.get('/list', function (ctx) { return __awaiter(void 0, void 0, void 0, fu
     var result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, index_1.Fruit.find({})];
+            case 0: return [4 /*yield*/, fruit_1.default.find({})];
             case 1:
                 result = _a.sent();
                 if (!result || result.length === 0)
