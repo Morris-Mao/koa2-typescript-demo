@@ -1,6 +1,8 @@
 import json from './json'
+import Koa from 'koa';
+
 // Error Handler For Koa2
-export default async (ctx, next) => {
+export default async (ctx: Koa.BaseContext, next: () => Promise<any>) => {
     try {
         await next()
     } catch (e) {

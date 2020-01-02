@@ -1,4 +1,6 @@
-export default (ctx, returnData: Object = {}) => {
+import Koa from 'koa';
+
+export default (ctx: Koa.BaseContext, returnData: Object = {}) => {
     ctx.type = 'application/json';
     const newReturn = Object.assign({
         success: true,

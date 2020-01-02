@@ -3,6 +3,6 @@ package-lock.json
 # Webstorm
 .idea
 # Ignore Ts Compiled Files
-build
+# dist
 # Ignore Document
-document
+# docs

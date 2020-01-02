@@ -1,6 +1,7 @@
 import {Fruit} from '../schemas/index';
 import json from '../utils/json';
-const Router = require('koa-router');
+import Koa from 'koa';
+import Router from 'koa-router';
 const router = new Router();
 
 
@@ -13,7 +14,7 @@ const router = new Router();
  *
  * @apiSuccess {String} name Name of Fruit.
  */
-router.get('/create', async (ctx) => {
+router.get('/create', async (ctx: Koa.BaseContext) => {
     const client = new Fruit({
         name: ctx.query.name
     });
@@ -25,7 +26,7 @@ router.get('/create', async (ctx) => {
     });
 });
 
-router.get('/list', async (ctx) => {
+router.get('/list', async (ctx: Koa.BaseContext) => {
     const result = await Fruit.find({});
     if (!result || result.length === 0) return json(ctx, {success: false, msg: "Can't find fruits"});
     json(ctx, {

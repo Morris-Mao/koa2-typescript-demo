@@ -2,9 +2,9 @@ import config from './config';
 import { connect as MongoConnect } from 'mongoose';
 import errorHandler from './utils/error_handler'
 
-const Koa = require('koa2');
-const koaCors = require('koa2-cors');
-const koaMorgan = require('koa-morgan');
+import Koa from 'koa';
+import koaCors from 'koa2-cors';
+import koaMorgan from 'koa-morgan';
 
 // Initialize Application
 const app = new Koa();
