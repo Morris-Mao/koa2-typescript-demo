@@ -14,7 +14,6 @@
   "license": "MIT",
   "repository": "github:leng-yue/koa2-typescript-demo",
   "dependencies": {
-    "@types/koa": "^2.11.0",
     "koa": "^2.11.0",
     "koa-morgan": "^1.0.1",
     "koa-router": "^7.4.0",
@@ -23,6 +22,7 @@
     "mongoose": "^5.7.10"
   },
   "devDependencies": {
+    "@types/koa": "^2.11.0",
     "@types/koa-morgan": "^1.0.4",
     "@types/koa-router": "^7.0.42",
     "@types/koa2-cors": "^2.0.1",
